@@ -35,8 +35,14 @@
     "android"
   ],
   "harmony": {
-		"alias": "@mattermost/react-native-turbo-log"
-	},
+    "alias": "@mattermost/react-native-turbo-log",
+    "autolinking": {
+      "etsPackageClassName": "TurboLogPackage",
+      "cppPackageClassName": "TurboLogPackage",
+      "cmakeLibraryTargetName": "rnoh_turbo_log",
+      "ohPackageName": "@react-native-ohos/react-native-turbo-log"
+    }
+  },
   "repository": "https://github.com/mattermost/react-native-turbo-log",
   "author": "Mattermost, Inc. <nahumhbl@gmail.com> (https://github.com/mattermost)",
   "license": "MIT",

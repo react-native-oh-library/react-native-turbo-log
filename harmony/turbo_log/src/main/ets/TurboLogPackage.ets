@@ -4,7 +4,7 @@
  * found in the LICENSE file.
  */
 
-import { RNPackage, TurboModulesFactory } from '@rnoh/react-native-openharmony/ts';
+import { RNOHPackage, TurboModulesFactory } from '@rnoh/react-native-openharmony';
 import type { TurboModule, TurboModuleContext } from '@rnoh/react-native-openharmony/ts';
 import { TurboLogModule } from './TurboLogModule';
 
@@ -28,7 +28,7 @@ class TurboLogModulesFactory extends TurboModulesFactory {
  * TurboLogPackage - React Native Package for TurboLog
  * Register this package in your application to enable TurboLog functionality
  */
-export class TurboLogPackage extends RNPackage {
+export class TurboLogPackage extends RNOHPackage {
   createTurboModulesFactory(ctx: TurboModuleContext): TurboModulesFactory {
     return new TurboLogModulesFactory(ctx);
   }
